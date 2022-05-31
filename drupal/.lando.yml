@@ -1,4 +1,7 @@
 name: drupal-mercure
 recipe: drupal9
 config:
+  php: '8.1'
+  composer_version: '2-latest'
   webroot: web
+  xdebug: true
