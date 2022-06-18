@@ -1,0 +1,11 @@
+parameters:
+  mercure:
+    hubs:
+      default:
+        url: 'https://hub.drupalmercure.lndo.site/.well-known/mercure'
+        jwt:
+          secret: '!ChangeMe!'
+
+services:
+  cache.backend.null:
+    class: Drupal\Core\Cache\NullBackendFactory
