@@ -5,3 +5,26 @@ config:
   composer_version: '2-latest'
   webroot: web
   xdebug: true
+
+# Add a Mercure container
+services:
+  app_mount: false
+  services:
+    command: caddy run -config /etc/caddy/Caddyfile
+    environment:
+      MERCURE_PUBLISHER_JWT_KEY: '!ChangeMe!'
+      MERCURE_SUBSCRIBER_JWT_KEY: '!ChangeMe!'
+      SERVER_NAME: ':80'
+      MERCURE_EXTRA_DIRECTIVES: |
+        publish_origins *
+        anonymous
+        subscriptions
+    image: dunglas/mercure
+    ports:
+      - 1337:80
+  type: compose
+
+# Add a unique URL to the mercure container
+proxy:
+  mercure:
+    - mercure.zone.lndo.site

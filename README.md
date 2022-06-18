@@ -11,5 +11,5 @@
 
 - Go to https://drupal-mercure.lndo.site/
 - login as the admin user the drush site install created
-- 
 
+## Install and configure Mercure
