@@ -13,3 +13,5 @@
 - login as the admin user the drush site install created
 
 ## Install and configure Mercure
+
+`$ lando drush en mercure`
