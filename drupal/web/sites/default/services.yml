@@ -2,10 +2,17 @@ parameters:
   mercure:
     hubs:
       default:
-        url: 'https://hub.drupalmercure.lndo.site/.well-known/mercure'
+        url: 'http://hub.drupalmercure.lndo.site/.well-known/mercure'
         jwt:
           secret: '!ChangeMe!'
-
+  cors.config:
+    enabled: true
+    allowedHeaders: [ '*' ]
+    allowedMethods: [ '*' ]
+    allowedOrigins: [ '*' ]
+    exposedHeaders: false
+    maxAge: false
+    supportsCredentials: true
 services:
   cache.backend.null:
     class: Drupal\Core\Cache\NullBackendFactory

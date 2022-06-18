@@ -19,6 +19,10 @@ $settings['entity_update_backup'] = TRUE;
 
 $settings['migrate_node_migrate_type_classic'] = FALSE;
 
+$settings['cache']['bins']['render'] = 'cache.backend.null';
+$settings['cache']['bins']['page'] = 'cache.backend.null';
+$settings['cache']['bins']['dynamic_page_cache'] = 'cache.backend.null';
+
 $databases['default']['default'] = array (
   'database' => 'drupal9',
   'username' => 'drupal9',
