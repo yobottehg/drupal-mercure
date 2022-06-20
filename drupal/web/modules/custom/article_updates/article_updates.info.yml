@@ -1,0 +1,8 @@
+name: Article updates
+type: module
+package: Web services
+core_version_requirement: ">=9"
+dependencies:
+  - drupal:node
+  - drupal:jsonapi
+  - drupal:mercure

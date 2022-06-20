@@ -19,8 +19,10 @@
         "drupal/core-composer-scaffold": "^9.3",
         "drupal/core-project-message": "^9.3",
         "drupal/core-recommended": "^9.3",
+        "drupal/jsonapi_extras": "^3.20",
         "drupal/mercure": "^1.0",
-        "drush/drush": "^11.0"
+        "drush/drush": "^11.0",
+        "lcobucci/jwt": "^4.1"
     },
     "conflict": {
         "drupal/drupal": "*"

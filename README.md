@@ -15,7 +15,7 @@
 
 ## Install and configure Mercure
 
-`$ lando drush en jsonapi mercure -y`
+`$ lando drush en jsonapi mercure jsonapi_extras -y`
 
 ## Build and run the client
 

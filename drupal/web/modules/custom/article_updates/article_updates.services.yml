@@ -1,0 +1,6 @@
+services:
+  article_updates_service:
+    class: Drupal\article_updates\ArticleUpdatesService
+    arguments:
+      - '@mercure.hub.default'
+      - '@jsonapi_extras.entity.to_jsonapi'

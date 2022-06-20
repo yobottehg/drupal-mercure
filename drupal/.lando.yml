@@ -4,22 +4,18 @@ config:
   php: '8.1'
   composer_version: '2-latest'
   webroot: web
-  xdebug: false
+  xdebug: true
 
 # Add a Mercure container
 services:
   mercure:
     app_mount: false
     services:
-      command: caddy run -config /etc/caddy/Caddyfile
+      command: caddy run -config /etc/caddy/Caddyfile.dev
       environment:
         MERCURE_PUBLISHER_JWT_KEY: '!ChangeMe!'
         MERCURE_SUBSCRIBER_JWT_KEY: '!ChangeMe!'
         SERVER_NAME: ':80'
-        MERCURE_EXTRA_DIRECTIVES: |
-          publish_origins *
-          anonymous
-          subscriptions
       image: dunglas/mercure
       ports:
         - 1337:80

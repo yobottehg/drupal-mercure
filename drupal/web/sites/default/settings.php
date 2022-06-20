@@ -35,3 +35,6 @@ $databases['default']['default'] = array (
 );
 
 $settings['config_sync_directory'] = 'sites/default/files/config_qPUrseIm9pDkb8D50zSkyZMlTnjSQP1IobaJjjDSHNCSPchOsCn93vglCYBd6MWSUmiGLTyWbg/sync';
+error_reporting(E_ALL);
+ini_set('display_errors', TRUE);
+ini_set('display_startup_errors', TRUE);
