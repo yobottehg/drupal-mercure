@@ -1,18 +1,18 @@
 <?php
 
-function article_updates_entity_delete(\Drupal\Core\Entity\EntityInterface $entity) {
+function article_updates_entity_delete(\Drupal\Core\Entity\EntityInterface $entity): void {
   if (!_checkArticle($entity)) return;
 
   _getUpdateService()->deleteUpdate($entity);
 }
 
-function article_updates_entity_update(\Drupal\Core\Entity\EntityInterface $entity) {
+function article_updates_entity_update(\Drupal\Core\Entity\EntityInterface $entity): void {
   if (!_checkArticle($entity)) return;
 
   _getUpdateService()->editUpdate($entity);
 }
 
-function article_updates_entity_insert(\Drupal\Core\Entity\EntityInterface $entity) {
+function article_updates_entity_insert(\Drupal\Core\Entity\EntityInterface $entity): void {
   if (!_checkArticle($entity)) return;
 
   _getUpdateService()->createUpdate($entity);

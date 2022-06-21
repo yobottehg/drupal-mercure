@@ -12,10 +12,11 @@
 
 - Go to https://drupalmercure.lndo.site/
 - login as the admin user the drush site install created
+- Check the mercure UI http://hub.drupalmercure.lndo.site
 
 ## Install and configure Mercure
 
-`$ lando drush en jsonapi mercure jsonapi_extras -y`
+`$ lando drush en jsonapi mercure jsonapi_extras article_updates -y`
 
 ## Build and run the client
 
@@ -23,10 +24,3 @@
 `$ npm i`
 `$ npm run dev`
 `$ go to localhost:1234`
-
-## Next steps
-
-- attach client to mercure
-- attach drupal to mercure
-- subscribe to article updates
-- publish article updates

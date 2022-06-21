@@ -9,14 +9,12 @@ use Symfony\Component\Mercure\Update;
 
 class ArticleUpdatesService
 {
-
   public const BASE_TOPIC_URL = 'https://drupalmercure.lndo.site/jsonapi/node/';
 
   public function __construct(
     private HubInterface $mercure,
     private EntityToJsonApi $entityToJsonApi
-  ) {
-  }
+  ) { }
 
   public function deleteUpdate(NodeInterface $node): void
   {

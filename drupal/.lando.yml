@@ -16,6 +16,7 @@ services:
         MERCURE_PUBLISHER_JWT_KEY: '!ChangeMe!'
         MERCURE_SUBSCRIBER_JWT_KEY: '!ChangeMe!'
         SERVER_NAME: ':80'
+        GLOBAL_OPTIONS: 'auto_https off'
       image: dunglas/mercure
       ports:
         - 1337:80
